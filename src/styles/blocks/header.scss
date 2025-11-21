@@ -1,0 +1,17 @@
+@use '../utils/vars' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-inline: 50px;
+  background-color: $color-white;
+  border-bottom: 1px solid $color-border;
+}
+
+.logo {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
