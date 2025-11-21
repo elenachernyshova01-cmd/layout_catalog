@@ -2,7 +2,7 @@
 
 .stars {
   display: flex;
-  gap: 4px;
+  gap: $stars-gap;
   padding: 0;
 
   &__star {

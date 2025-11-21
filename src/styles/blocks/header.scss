@@ -5,13 +5,13 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding-inline: 50px;
+  padding-inline: $header-padding-x;
   background-color: $color-white;
   border-bottom: 1px solid $color-border;
 }
 
-.logo {
+.header__logo {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: $logo-dimension;
+  height: $logo-dimension;
 }
