@@ -10,18 +10,18 @@
   grid-template-columns: repeat(1, $card-width);
   justify-content: center;
 
-  @media (min-width: 488px) {
+  @media (min-width: 526px) {
     grid-template-columns: repeat(2, $card-width);
     justify-content: center;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 772px) {
     grid-template-columns: repeat(3, $card-width);
     justify-content: center;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1018px) {
     grid-template-columns: repeat(4, $card-width);
-    justify-content: space-between;
+    justify-content: center;
   }
 }

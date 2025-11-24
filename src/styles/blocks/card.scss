@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 32px 19px 16px;
+  padding: $card-padding-top $card-padding-x $card-padding-bottom;
   box-sizing: border-box;
   transition:
     transform $transition-duration,
@@ -21,7 +21,7 @@
     display: block;
     width: 100%;
     height: auto;
-    padding-bottom: 40px;
+    padding-bottom: $card-img-padding-bottom;
   }
 
   &__content {
@@ -32,40 +32,38 @@
   }
 
   &__title {
-    width: 166px;
-    height: 36px;
-    font-size: 12px;
+    height: $card-title-height;
+    font-size: $font-size-sm;
     font-weight: 500;
-    line-height: 18px;
+    line-height: $line-height-md;
     letter-spacing: 0%;
     color: $color-text;
-    margin-bottom: 4px;
+    margin-bottom: $card-title-margin-bottom;
     transition: color $transition-duration;
   }
 
   &__code {
-    font-size: 10px;
+    font-size: $font-size-xs;
     font-weight: 400;
-    line-height: 14px;
-    width: 98px;
-    height: 14px;
-    margin-right: 68px;
-    margin-bottom: 16px;
+    line-height: $line-height-sm;
+    width: $card-code-width;
+    height: $line-height-sm;
+    margin-right: $card-code-margin-right;
+    margin-bottom: $card-code-margin-bottom;
     color: $color-gray-text;
   }
 
   &__stars {
     display: flex;
-    width: 166px;
-    height: 16px;
+    height: $card-stars-height;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: $card-stars-margin-bottom;
   }
 
   &__reviews {
-    width: 53px;
-    font-size: 10px;
+    width: $card-reviews-width;
+    font-size: $font-size-xs;
     font-weight: 400;
     letter-spacing: 0%;
     align-items: center;
@@ -76,36 +74,35 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 16px;
+    margin-bottom: $card-price-margin-bottom;
   }
 
   &__price-title {
-    font-size: 12px;
+    font-size: $font-size-sm;
     font-weight: 400;
-    line-height: 18px;
+    line-height: $line-height-md;
     color: $color-gray-text;
   }
 
   &__price-value {
-    font-size: 16px;
+    font-size: $font-size-lg;
     font-weight: 700;
-    line-height: 18px;
+    line-height: $line-height-md;
     color: $color-text;
   }
 
   &__button {
     display: block;
     text-decoration: none;
-    width: 166px;
-    height: 40px;
-    line-height: 40px;
+    height: $card-button-height;
+    line-height: $card-button-height;
     border-radius: $radius-card;
     border: 1px solid $color-blue;
     background-color: $color-blue;
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 14px;
+    font-size: $font-size-md;
     color: $color-white;
     transition:
       background-color $transition-duration,
